@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODPANDA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f7f7f7;
+
+        }
+
+        .header {
+            background-color: rgb(255, 255, 255, 1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+
+            display: flex;
+            box-shadow: 0 6px 5px 0 rgba(0, 0, 0, .2);
+            justify-content: space-between;
+        }
+
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav,
+        .logo {
+            padding: 0 20px;
+
+        }
+       
+        .btn {
+            width: 100px;
+            padding: 10px 10px;
+           text-align: center;
+           border: 2px solid black;
+           background-color: #aa0247;
+            color: #f7f7f7;
+        }
+
+        .logo {
+            height: 100px;
+            display: flex;
+            align-items: center;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        .main-content {
+            padding-left: 100px;
+            margin-top: 65px;
+        }
+
+        .main-input input {
+            padding: 10px 120px;
+        }
+
+        .main-input img {
+            position: absolute;
+            top: 422px;
+            left: 400px
+        }
+        .main-input button {
+            padding: 10px 30px;
+            background-color: #aa0247;
+            color: #f7f7f7;
+           
+        }
+        @media screen(max-width:425)
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo"><img src="./jpg_foodpanda-removebg-preview.png" alt=""></div>
+        <div class="nav">
+            <span class="login btn">login</span>
+            <span class="signup btn">sign up</span>
+            <img src="./language.png" alt="">
+            <img src="./picture-removebg-preview.png" alt="">
+        </div>
+    </header>
+    <div class="main">
+        <div class="main-content">
+            <h1>It's the food and groceries you love,<br> delivered</h1>
+            <div class="main-input">
+                <input type="text" placeholder="your street and street number">
+                <button>FIND</button>
+                <img src="./jpg.input.png" alt="">
+            </div>
+        </div>
+        <div class="main-banner">
+            <img src="./food.jpg.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
